@@ -1,6 +1,6 @@
 import React from "react"
 
-const IndexPage = () => {
+const IndexPage = (): JSX.Element => {
   return <p />
 }
 
