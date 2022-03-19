@@ -1,5 +1,5 @@
 import React from "react"
-
+import { StaticImage } from "gatsby-plugin-image"
 type BrickType = {}
 
 let audio: HTMLAudioElement
@@ -20,7 +20,13 @@ export const Brick: React.FunctionComponent<BrickType> = () => {
       onClick={playCoinSound}
     >
       <div className="w-full absolute z-[1]">
-        <img className="w-full" src={"/images/Mario_brick.png"} />
+        <StaticImage
+          className="w-full"
+          src={"../../images/mario_brick.png"}
+          alt={"brick"}
+          width={40}
+          height={40}
+        />
       </div>
       <div className="absolute top-0 flex w-full justify-center coin">
         <img
