@@ -1,9 +1,9 @@
 import React from "react"
 
 type GroundType = {
-   name: string
 }
 
 export const Ground: React.FunctionComponent<GroundType> = () => {
-    return <div>sa</div>
+    return <div className="absolute bottom-[0] w-full h-[100px] bg-[#000] mario-ground">
+    </div>
 }
