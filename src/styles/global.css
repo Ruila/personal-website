@@ -1,4 +1,6 @@
 @import "ground.css";
+@import "coin.css";
+@import "cloud.css";
 
 @tailwind base;
 @tailwind components;
