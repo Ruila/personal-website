@@ -1,8 +1,8 @@
 import React from "react"
-import { Ground } from "../components/mario/Ground";
+import { MarioView } from "../components/mario/MarioView";
 
 const MarioPage: React.FunctionComponent = () => {
-    return <Ground name={"aa"}/>
+    return <MarioView/>
 }
 
 export default MarioPage

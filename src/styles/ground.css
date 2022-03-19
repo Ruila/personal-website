@@ -1,0 +1,6 @@
+.mario-ground {
+    background-image:
+            url("/images/super_mario_bros_ground.png");
+    background-size: 30px;
+    background-repeat: repeat;
+}
