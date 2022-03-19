@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_gatsby_site=self.webpackChunkmy_gatsby_site||[]).push([[864],{157:function(e,n,t){t.r(n),t.d(n,{MarioPage:function(){return u}});var a=t(7294),r=function(){return a.createElement("div",null,"sa")},u=function(){return a.createElement(r,{name:"aa"})}}}]);
-//# sourceMappingURL=component---src-pages-mario-tsx-356be14ab1af5cf84c89.js.map
