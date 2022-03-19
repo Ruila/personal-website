@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-tsx-82d7c59791341c6144a8.js","mappings":"0IAMA,UAJkB,WAChB,OAAO","sources":["webpack://my-gatsby-site/./src/pages/index.tsx"],"sourcesContent":["import React from \"react\"\n\nconst IndexPage = (): JSX.Element => {\n  return <p />\n}\n\nexport default IndexPage"],"names":[],"sourceRoot":""}
