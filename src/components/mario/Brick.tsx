@@ -2,11 +2,14 @@ import React from "react"
 
 type BrickType = {}
 
-export const Brick: React.FunctionComponent<BrickType> = () => {
-  const audio = new Audio(
+let audio: HTMLAudioElement
+if (typeof Audio !== "undefined") {
+  audio = new Audio(
     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/94617/coin.mp3"
   )
+}
 
+export const Brick: React.FunctionComponent<BrickType> = () => {
   const playCoinSound = () => {
     audio.play()
   }
@@ -17,7 +20,7 @@ export const Brick: React.FunctionComponent<BrickType> = () => {
       onClick={playCoinSound}
     >
       <div className="w-full absolute z-[1]">
-        <img className="w-full" src={"images/mario_brick.png"} />
+        <img className="w-full" src={"/images/Mario_brick.png"} />
       </div>
       <div className="absolute top-0 flex w-full justify-center coin">
         <img
