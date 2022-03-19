@@ -1,0 +1,50 @@
+#cloud1 {
+    position: absolute;
+    top: 50px;
+    left: -5%;
+    animation: cloud1 48s infinite ease-in-out;
+}
+
+@keyframes cloud1 {
+    0%{
+        left: -5%;
+    }
+
+    100% {
+        left: 105%;
+    }
+}
+
+#cloud2 {
+    position: absolute;
+    top: 50px;
+    right: -5%;
+    animation: cloud2 40s infinite;
+}
+
+@keyframes cloud2 {
+    0%{
+        right: -5%;
+    }
+
+    100% {
+        right: 105%;
+    }
+}
+
+#cloud3 {
+    position: absolute;
+    top: 150px;
+    right: -15%;
+    animation: cloud3 90s infinite ease-in-out;
+}
+
+@keyframes cloud3 {
+    0%{
+        right: -5%;
+    }
+
+    100% {
+        right: 105%;
+    }
+}

@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "eslint \"**/*.{tsx,ts}\""
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",
