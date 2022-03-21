@@ -33,7 +33,7 @@ export const MessageBoard: React.FunctionComponent<MessageBoardType> = ({
       >
         [X Close]
       </div>
-      <div className="text-base mb-8">Profile</div>
+      <div className="text-base mb-8">Choose where you want to go :</div>
       {renderContent}
     </div>
   )
