@@ -3,6 +3,15 @@
 @import "cloud.css";
 @import "message_board.css";
 
+@font-face {
+    font-family: press-star;
+    src: url('./PressStart2P-Regular.ttf');
+}
+
+.font-press-star{
+    font-family: press-star, serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

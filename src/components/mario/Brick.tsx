@@ -31,7 +31,7 @@ export const Brick: React.FunctionComponent<BrickType> = ({
 
   return (
     <div
-      className="absolute bottom-[200px] left-[30%] w-[40px] h-[40px]"
+      className="absolute bottom-[200px] left-[30%] w-[40px] h-[40px] cursor-pointer"
       onClick={playCoinSound}
     >
       <div className="w-full absolute z-[1]">

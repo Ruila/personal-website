@@ -17,7 +17,10 @@ export const MarioView: React.FunctionComponent = () => {
       <Brick handleMessageBoard={handleMessageBoard} />
       <Tile />
       <Mountain />
-      <MessageBoard show={showMessageBoard} />
+      <MessageBoard
+        show={showMessageBoard}
+        handleMessageBoard={handleMessageBoard}
+      />
       <Ground />
     </div>
   )
