@@ -1,15 +1,20 @@
 .message_board {
     opacity: 0;
-    animation: message_board 0.8s;
-    animation-fill-mode: forwards;
     bottom: 10%;
     width: 45px;
     height: 45px;
     left: 50%;
     transform: translate(-50%, 0);
+    box-shadow: 7px 4px 6px black;
+    border: 7px outset #E4C8C7;
 }
 
-@keyframes message_board {
+.message_board_animate {
+    animation: message_board_animate 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes message_board_animate {
     0%{
         opacity: 0;
         bottom: 10%;
