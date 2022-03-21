@@ -1,7 +1,9 @@
 import React, { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { useDebounce } from "react-use"
-type BrickType = {}
+type BrickType = {
+  handleMessageBoard: (value: boolean) => void
+}
 
 let audio: HTMLAudioElement
 if (typeof Audio !== "undefined") {
@@ -10,11 +12,14 @@ if (typeof Audio !== "undefined") {
   )
 }
 
-export const Brick: React.FunctionComponent<BrickType> = () => {
+export const Brick: React.FunctionComponent<BrickType> = ({
+  handleMessageBoard,
+}) => {
   const [coinEvent, setCoinEvent] = useState(false)
   const [isReady] = useDebounce(() => {}, 800, [coinEvent])
 
   const playCoinSound = () => {
+    handleMessageBoard(true)
     if (isReady()) {
       setCoinEvent(true)
       audio.play()
