@@ -1,6 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
-type BrickType = {}
+import { useDebounce } from "react-use"
+type BrickType = {
+  handleMessageBoard: (value: boolean) => void
+}
 
 let audio: HTMLAudioElement
 if (typeof Audio !== "undefined") {
@@ -9,9 +12,21 @@ if (typeof Audio !== "undefined") {
   )
 }
 
-export const Brick: React.FunctionComponent<BrickType> = () => {
+export const Brick: React.FunctionComponent<BrickType> = ({
+  handleMessageBoard,
+}) => {
+  const [coinEvent, setCoinEvent] = useState(false)
+  const [isReady] = useDebounce(() => {}, 800, [coinEvent])
+
   const playCoinSound = () => {
-    audio.play()
+    handleMessageBoard(true)
+    if (isReady()) {
+      setCoinEvent(true)
+      audio.play()
+      setTimeout(() => {
+        setCoinEvent(false)
+      }, 800)
+    }
   }
 
   return (
@@ -28,7 +43,11 @@ export const Brick: React.FunctionComponent<BrickType> = () => {
           height={40}
         />
       </div>
-      <div className="absolute top-0 flex w-full justify-center coin">
+      <div
+        className={`absolute top-0 flex w-full justify-center ${
+          coinEvent ? "coin" : ""
+        }`}
+      >
         <img
           className="w-[25px]"
           src="https://i.gifer.com/origin/50/509175766f72a32aeb3cde0de5114122_w200.gif"

@@ -1,0 +1,27 @@
+.message_board {
+    opacity: 0;
+    animation: message_board 0.8s;
+    animation-fill-mode: forwards;
+    bottom: 10%;
+    width: 45px;
+    height: 45px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@keyframes message_board {
+    0%{
+        opacity: 0;
+        bottom: 10%;
+        width: 45px;
+        height: 45px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 50%;
+        width: 60%;
+        height: 345px;
+    }
+
+}
