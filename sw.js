@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-e6bdfff0440a42193e77.js"
+    "url": "webpack-runtime-a16c1bb385299f52a293.js"
   },
   {
     "url": "framework-f24c3fbb71f117e223ab.js"
@@ -40,7 +40,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "d6c0a0f716465eac036aa159878d2b61"
+    "revision": "0d2aa0a7c1c22238a3cf6e04357d887f"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-752e9610333fa28046ac.js"
@@ -51,7 +51,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "c073bf18a4ae963306cb3cee5eff038e"
+    "revision": "2dc73ddd9efe13dd92131ac5b572d46e"
   },
   {
     "url": "polyfill-db109019bff945921aa3.js"
@@ -75,7 +75,7 @@ self.__precacheManifest = [
     "revision": "57f4fea8d5bc19583c2b49aa7cc10c09"
   },
   {
-    "url": "component---src-pages-mario-tsx-f12819933940d7fc5d0d.js"
+    "url": "component---src-pages-mario-tsx-4ef54649b4d0f441e00f.js"
   },
   {
     "url": "page-data/mario/page-data.json",
