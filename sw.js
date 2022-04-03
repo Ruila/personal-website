@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-78a81e94bb3ef9db6804.js"
+    "url": "webpack-runtime-0a37224d9e42f0b51924.js"
   },
   {
     "url": "framework-f24c3fbb71f117e223ab.js"
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "styles.c07649c8a15280507f54.css"
   },
   {
-    "url": "app-1e178d2c1b0245e03f91.js"
+    "url": "app-ee8b2c17c053e844f9fa.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "6819f7c1b3cb833388fbce3d0fce3d36"
+    "revision": "02e2879c60658f995fc2008f785ffb2c"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-752e9610333fa28046ac.js"
@@ -51,7 +51,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "41dc6512bda2749e9441e0b3deadc422"
+    "revision": "b28d5b4abdf9bc8f131da63c5f2cbec9"
   },
   {
     "url": "polyfill-db109019bff945921aa3.js"
@@ -75,7 +75,7 @@ self.__precacheManifest = [
     "revision": "57f4fea8d5bc19583c2b49aa7cc10c09"
   },
   {
-    "url": "component---src-pages-mario-tsx-2e8aeb8ce6478d6e767f.js"
+    "url": "component---src-pages-mario-tsx-c4defc3331abba020fd1.js"
   },
   {
     "url": "page-data/mario/page-data.json",
@@ -193,7 +193,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/personal-website/app-1e178d2c1b0245e03f91.js`))) {
+  if (!resources || !(await caches.match(`/personal-website/app-ee8b2c17c053e844f9fa.js`))) {
     return await fetch(event.request)
   }
 
