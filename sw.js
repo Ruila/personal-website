@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-a16c1bb385299f52a293.js"
+    "url": "webpack-runtime-0a37224d9e42f0b51924.js"
   },
   {
     "url": "framework-f24c3fbb71f117e223ab.js"
   },
   {
-    "url": "styles.dfc28d53a1c414530360.css"
+    "url": "styles.c07649c8a15280507f54.css"
   },
   {
     "url": "app-ee8b2c17c053e844f9fa.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "0d2aa0a7c1c22238a3cf6e04357d887f"
+    "revision": "02e2879c60658f995fc2008f785ffb2c"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-752e9610333fa28046ac.js"
@@ -51,7 +51,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "2dc73ddd9efe13dd92131ac5b572d46e"
+    "revision": "b28d5b4abdf9bc8f131da63c5f2cbec9"
   },
   {
     "url": "polyfill-db109019bff945921aa3.js"
@@ -75,7 +75,7 @@ self.__precacheManifest = [
     "revision": "57f4fea8d5bc19583c2b49aa7cc10c09"
   },
   {
-    "url": "component---src-pages-mario-tsx-4ef54649b4d0f441e00f.js"
+    "url": "component---src-pages-mario-tsx-c4defc3331abba020fd1.js"
   },
   {
     "url": "page-data/mario/page-data.json",
