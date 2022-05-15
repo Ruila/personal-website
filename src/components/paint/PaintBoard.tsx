@@ -17,7 +17,6 @@ export const PaintBoard: React.FunctionComponent = () => {
   }
 
   const startDrawing = e => {
-    console.info("startDrawing")
     const { x, y } = getOffset(e)
     setDrawing(true)
     setCurrentX(x)
@@ -39,7 +38,6 @@ export const PaintBoard: React.FunctionComponent = () => {
   }
 
   const stopDrawing = () => {
-    console.info("stopDrawing")
     setDrawing(false)
   }
 
