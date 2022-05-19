@@ -48,8 +48,8 @@ export const PaintBoard: React.FunctionComponent = () => {
   return (
     <canvas
       ref={canvas}
-      width={300}
-      height={300}
+      width={400}
+      height={400}
       className="border-[#000] border-[1px] border-solid"
       onTouchStart={startDrawing}
       onTouchMove={drawCanvas}
