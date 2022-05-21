@@ -23,7 +23,7 @@ export const PaintBoard: React.FunctionComponent = () => {
     setCurrentY(y)
   }
 
-  const drawCanvas = e: React.C => {
+  const drawCanvas = e => {
     const context = (canvas.current as unknown as HTMLCanvasElement).getContext(
       "2d"
     ) as CanvasRenderingContext2D
