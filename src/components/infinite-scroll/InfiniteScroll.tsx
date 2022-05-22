@@ -1,14 +1,17 @@
 import React, { useState, useRef, useCallback } from "react"
-import { useBookSearch } from "./useBookSearch"
+import { useInfiniteScrollQuery } from "./useInfiniteScrollQuery"
 
 export const InfiniteScroll: React.FunctionComponent = () => {
   const [query, setQuery] = useState("test")
   const [pageNumber, setPageNumber] = useState(1)
 
-  const { books, hasMore, loading, error } = useBookSearch(query, pageNumber)
+  const { data, hasMore, loading, error } = useInfiniteScrollQuery(
+    query,
+    pageNumber
+  )
 
   const observer = useRef<IntersectionObserver>()
-  const lastBookElementRef = useCallback(
+  const lastElementRef = useCallback(
     node => {
       if (loading) {
         return
@@ -42,24 +45,24 @@ export const InfiniteScroll: React.FunctionComponent = () => {
         placeholder="Input something"
         onChange={handleSearch}
       />
-      {books.map((book, index) => {
-        if (books.length - 1 === index) {
+      {data.map((item, index) => {
+        if (data.length - 1 === index) {
           return (
             <div
               className="my-2 w-[250px] shadow-lg border-[#000] border-[1px] border-solid rounded-[5px] p-2"
-              ref={lastBookElementRef}
-              key={book}
+              ref={lastElementRef}
+              key={index}
             >
-              {book}
+              Last Node
             </div>
           )
         } else {
           return (
             <div
               className="my-2 w-[250px] shadow-lg border-[#000] border-[1px] rounded-[5px] border-solid p-2"
-              key={book}
+              key={index}
             >
-              {book}
+              {item}
             </div>
           )
         }
