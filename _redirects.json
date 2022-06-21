@@ -1,1 +1,1 @@
-{"redirects":[],"rewrites":[]}
+{"redirects":[],"rewrites":[{"fromPath":"/:test/123","toPath":"/[test]/123/"}]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-[test]-123-tsx-f9aedd28e9a5f8f848f4.js","mappings":"yIAMA,UAJ0C,WACxC,OAAO","sources":["webpack://my-gatsby-site/./src/pages/[test]/123.tsx"],"sourcesContent":["import React from \"react\"\n\nconst TestPage: React.FunctionComponent = () => {\n  return <div>1213</div>\n}\n\nexport default TestPage\n"],"names":[],"sourceRoot":""}
